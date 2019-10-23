@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="2dp"
+    android:padding="20dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/user_food_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/user_food_title_tv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_food_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Cheese Omelet"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/user_food_content_tv"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_food_title_tv"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Fried Eggs, Vegies, Bread"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/user_food_price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/user_food_title_tv"
+            android:layout_marginLeft="62dp"
+            android:layout_toRightOf="@id/user_food_title_tv"
+            android:text="89.00 ETB"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/add_to_cart_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/user_food_title_tv"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="71dp"
+
+            android:layout_toEndOf="@+id/user_food_content_tv"
+            android:layout_toRightOf="@id/user_food_content_tv"
+            android:backgroundTint="@color/colorAccent"
+            android:src="@drawable/ic_shopping_cart"
+            android:stateListAnimator="@null" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

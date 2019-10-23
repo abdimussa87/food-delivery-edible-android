@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="2dp"
+    android:layout_margin="10dp"
+    android:padding="20dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/main_activity_restaurant_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/main_activity_restaurant_name_tv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/main_activity_restaurant_iv"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Restaurant Name"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+
+            android:id="@+id/main_activity_rating_tv"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@id/main_activity_restaurant_name_tv"
+
+            android:layout_alignTop="@+id/main_activity_restaurant_name_tv"
+            android:layout_marginLeft="101dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/main_activity_restaurant_name_tv"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:clickable="false"
+
+            android:text="4.5"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/main_activity_restaurant_desc_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/main_activity_restaurant_name_tv"
+
+                    android:text="This is the restaurant worth spending money on"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/location_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_activity_restaurant_desc_tv"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Location: "
+                    android:textColor="@android:color/holo_red_dark"/>
+
+                <TextView
+                    android:id="@+id/main_activity_located_at_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_alignBaseline="@+id/location_tv"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@id/location_tv"
+                    android:textSize="16sp"
+                    android:text="Bole" />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

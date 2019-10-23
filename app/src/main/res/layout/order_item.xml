@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="2dp"
+    android:layout_margin="10dp"
+    android:padding="20dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/order_food_imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <TextView
+            android:id="@+id/order_food_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:layout_toRightOf="@id/order_food_imageview"
+            android:text="Food Name"
+
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/processed_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@id/order_food_name"
+            android:layout_marginTop="68dp"
+            android:layout_toRightOf="@id/order_food_imageview"
+
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:id="@+id/order_food_price"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/order_food_name"
+            android:text="150"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/order_remove_food_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/order_food_price"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="Remove"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
